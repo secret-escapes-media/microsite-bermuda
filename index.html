@@ -1,0 +1,29 @@
+---
+layout: default
+title: Bermuda Offers
+class: offers
+nav-order: 3
+---
+
+<section class="section--fixed-bg intro align-center parallax" data-parallax-speed="0.1">
+  <div class="row row--padding">
+    <h1><img src="{{site.baseurl}}/img/content/title.png" alt="Island Luxury for Less" /></h1>
+  </div>
+</section>
+
+<section class="offers">
+  <div class="row row--padding align-center">
+    <p class="lead">
+      With a balmy year-round climate, pastel-coloured streets and famous pink sands, we defy anyone not to fall in love with this cheerful little island.
+    </p>
+    <p class="lead">
+      Take advantage of up to 30% off at a selection of hotels offered by British Airways, featuring some of Bermuda’s best luxury and boutique stays.
+    </p>
+  </div>
+  <div class="row row--padding row--columns-4-4-4-gutters">
+    {% assign offers = site.data.offers %}
+    {% for offer in offers %}
+        {% include offer-block.html %}
+    {% endfor %}
+  </div>
+</section>
