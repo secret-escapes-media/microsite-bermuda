@@ -9,7 +9,7 @@
     <h5>{{ offer.price-description | upcase }}</h5>
     <p>{{ offer.description }}</p>
     <a id="button-link-{{ offer.class }}" href="{{ offer.url }}" class="btn btn__sm">
-      From <span class="offer__content-price">£{{ offer.price }}</span>
+      {{ offer.price }}
     </a>
   </div>
 </div>
