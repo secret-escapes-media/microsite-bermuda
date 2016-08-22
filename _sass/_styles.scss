@@ -9,6 +9,11 @@
   font-size: .8em;
   font-weight: 400;
   background-color: $black;
+
+  h4, p { color: #ffffff; }
+  p { max-width: $large; margin-left: auto; margin-right: auto; }
+  hr.center { border: 0; border-top: 1px solid rgba(#ffffff, 0.3); height: 0; width: 80px; margin: 20px auto; }
+
 }
 
 
@@ -19,7 +24,7 @@
   padding-bottom: 10em;
   color: $white;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-image: url('../img/bg/bg-default.jpg');
   background-size: cover;
   p { font-weight: 400; text-shadow: 0 0 30px rgba(0,0,0,0.75); }
